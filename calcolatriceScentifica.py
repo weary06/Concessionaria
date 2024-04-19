@@ -115,7 +115,7 @@ class Calcolatrice(tk.Tk):
             # aggiunge la funzione trigonometrica all'espressione
             self.calculate_trig_function(text)
         elif text in ('√'):
-            self.espressione = '**(1/2)'
+            self.espressione += '**(1/2)'
             self.display.insert(tk.END, '√')
         elif text == '^':
             # Aggiunge l'operatore di elevamento a potenza all'espressione
